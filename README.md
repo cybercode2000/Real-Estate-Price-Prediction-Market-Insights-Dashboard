@@ -1,0 +1,1 @@
+### **Real Estate Price Prediction & Market Insights Dashboard:** An end-to-end machine learning project that predicts housing prices and provides interactive market insights through geospatial analysis and a deployed dashboard. DataSet From -> https://www.kaggle.com/datasets/fratzcan/usa-house-prices
