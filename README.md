@@ -1,7 +1,7 @@
 # Real Estate Price Prediction & Recommendation API 🏡
 
 ## Overview
-This project implements a **Real Estate Price Prediction system** using the **Kaggle House Prices dataset**, powered by **XGBoost** for accurate property valuation.  
+This project implements a **Real Estate Price Prediction system** using the **Kaggle House Prices dataset**, powered by **XGBoost** Linear regression for accurate property valuation.  
 Beyond predictions, it also provides **property recommendations** (slightly below or above the target price in a given city).
 
 The solution is deployed as a **REST API (FastAPI)**, making it easy for developers to integrate into real estate platforms.
@@ -37,26 +37,6 @@ uvicorn app:app --reload --port 8000
 
 ---
 
-## 🚀 Example Usage
-
-### Predict Price + Get Recommendations
-```bash
-curl -X POST http://localhost:8000/predict  -H "Content-Type: application/json"  -d '{
-       "city": "Leeds",
-       "neighborhood": "Headingley",
-       "year_built": 1995,
-       "house_style": "2Story",
-       "overall_qual": 7,
-       "overall_cond": 5,
-       "gr_liv_area": 1800,
-       "lot_area": 6500,
-       "bedroom_abv_gr": 3,
-       "bath_full": 2,
-       "garage_cars": 2,
-       "has_fireplace": 1
-     }'
-```
-
 **Response:**
 ```json
 {
@@ -67,13 +47,6 @@ curl -X POST http://localhost:8000/predict  -H "Content-Type: application/json" 
   ]
 }
 ```
-
----
-
-## 🌍 Next Steps
-Later this week, I’ll deploy a **frontend** on top of the API.  
-Currently, I’m exploring the best way to **visualize properties dynamically**.
-
 ---
 
 ## 💡 Looking for Suggestions
